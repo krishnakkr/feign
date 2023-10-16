@@ -71,6 +71,7 @@ public class Http2Client implements Client, AsyncClient<Object> {
         .connectTimeout(Duration.ofMillis(10000))
         .build());
   }
+  // added a comment
 
   public Http2Client(Options options) {
     this(newClientBuilder(options)
